@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F4F4F0;
+    color: #111111;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:active:not(:disabled) {
+    transform: translate(1px, 1px);
+  }
+}
+
+@layer components {
+  /* Бумажные стикеры ролей (швейцарский минимализм) */
+  .badge-sticker {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono font-bold tracking-wide uppercase border border-campus-border bg-white text-campus-text shadow-brutal-xs;
+  }
+
+  .badge-sticker-curator {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono font-bold tracking-wide uppercase border border-campus-border bg-[#FFE700] text-campus-text shadow-brutal-xs;
+  }
+
+  .badge-sticker-admin {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono font-bold tracking-wide uppercase border border-campus-border bg-campus-action text-white shadow-brutal-xs;
+  }
+
+  .badge-sticker-ai {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono font-bold tracking-wide uppercase border border-campus-ai bg-campus-ai text-white shadow-brutal-xs;
+  }
+
+  /* Чистая минималистичная карточка */
+  .brutal-card {
+    @apply bg-campus-surface border border-campus-border shadow-brutal transition-all;
+  }
+
+  /* Основная кнопка действия */
+  .btn-action {
+    @apply inline-flex items-center justify-center font-mono font-bold text-xs sm:text-sm uppercase px-3.5 py-2 bg-campus-action text-white border border-campus-border shadow-brutal hover:bg-[#E03600] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all;
+  }
+
+  /* Вторичная кнопка */
+  .btn-outline {
+    @apply inline-flex items-center justify-center font-mono font-medium text-xs uppercase px-2.5 py-1.5 bg-campus-surface text-campus-text border border-campus-border shadow-brutal-sm hover:bg-campus-bg active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all;
+  }
+
+  /* Кнопка AI */
+  .btn-ai {
+    @apply inline-flex items-center justify-center font-mono font-bold text-xs uppercase px-3 py-1.5 bg-campus-ai text-white border border-campus-border shadow-brutal-sm hover:bg-[#3D00D6] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all;
+  }
+}
