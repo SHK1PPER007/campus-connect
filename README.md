@@ -1,5 +1,11 @@
 # Научная работа: Campus.Connect
 
+![React](https://img.shields.io/badge/React-18-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-v5-FF4154?style=flat-square&logo=react-query&logoColor=white)
+
 Билингвальная веб-платформа для академической и социальной адаптации иностранных студентов, разработанная в рамках научной работы по теме сотрудничества Беларуси и Китая.
 
 Дизайн пользовательского интерфейса и вся клиентская и серверная логика (компоненты, типы данных, моковые сервисы, алгоритмы модерации и API-интеграции) разработаны с нуля.
